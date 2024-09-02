@@ -8,6 +8,9 @@ import styles from "./navbar.module.css";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const status = "unauthenticated";
+
   return (
     <div className={styles.container}>
       <div className={styles.social}>
@@ -39,8 +42,9 @@ const Navbar = () => {
           <Link href="/">Home</Link>
           <Link href="/">About</Link>
           <Link href="/">Contact</Link>
-          <Link href="/login">Login</Link>
-          <Link href="/write">Write</Link>
+          {status === "authenticated" ? <Link href="/write">Write</Link> : <Link href="/login">Login</Link> }
+          
+          
         </div>
         {/* Mobile Nav */}
         {open && (
@@ -48,8 +52,7 @@ const Navbar = () => {
             <Link href="/">Home</Link>
             <Link href="/">About</Link>
             <Link href="/">Contact</Link>
-            <Link href="/login">Login</Link>
-            <Link href="/write">Write</Link>
+            {status === "authenticated" ? <Link href="/write">Write</Link> : <Link href="/login">Login</Link> }
           </div>
         )}
       </div>

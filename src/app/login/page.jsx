@@ -1,4 +1,5 @@
 import { Facebook, GitHub, Google } from "@mui/icons-material";
+import Link from "next/link";
 import styles from "./login.module.css";
 const page = () => {
     return (
@@ -17,7 +18,9 @@ const page = () => {
               
 
                 <button className={styles.button}>Login</button>
+           <em> If don't have account: <b><Link href="/register">Register now</Link></b> </em>
             </form>
+
 
             <div className={styles.social}>
                 <button> <Google/> </button>
