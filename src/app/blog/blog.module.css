@@ -4,6 +4,15 @@
   margin-top: 70px;
 }
 
+.title {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: rgba(255, 166, 0, 0.349);
+  border-radius: 10px;
+  font-size: 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .content {
     flex-direction: column;

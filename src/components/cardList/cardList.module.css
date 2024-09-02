@@ -1,0 +1,14 @@
+.container {
+  flex: 3;
+}
+.title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 50px;
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 18px;
+  border-radius: 50px;
+  border: 2px solid var(--textColor);
+  cursor: pointer;
+  padding: 1px;
+  align-items: center;
+  background: var(--bg);
+  color: var(--textColor);
+}
+
+.ball {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  background: var(--textColor);
+  top: 0.5px;
+  transition: 1s ease;
+}
+.container svg {
+  font-size: 17px;
+  color: var(--softText);
+}

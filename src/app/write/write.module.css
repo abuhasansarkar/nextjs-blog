@@ -1,0 +1,45 @@
+.title {
+  font-size: 30px;
+  color: var(--textColor);
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 0;
+}
+.mediaIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.media button {
+  border: 1px solid var(--textColor);
+  border-radius: 100px;
+  color: var(--textColor);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publishBtn {
+  display: block;
+  padding: 10px 30px;
+  border: none;
+  background: lawngreen;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 50px;
+  cursor: pointer;
+}
